@@ -1,11 +1,394 @@
+<!-- RMIT University Vietnam
+Course: COSC2430 Web Programming
+Semester: 2023A
+Assessment: Assignment 1
+Author: Your names (e.g. Nguyen Van Minh)
+ID: Your student ids (e.g. 1234567)
+Acknowledgement: Acknowledge the resources that you use here. -->
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
+
+    <title>Enchanted Forest Books</title>
+
+     <!-- Favicons -->
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="assets/img/favicon.ico"
+    />
+
+     <!-- Web page CSS -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+    <link rel="stylesheet" href="../../assets/css/reset.css" />
+
   <body>
-    <h1>Category Children Book</h1>
+
+     <!-- Navbar -->
+
+     <nav class="nav">
+      <a href="../../index.html" class="logo">
+          <img class="logo-icon" src="../../assets/img/logo.png" alt="Echanted Forest Icon" width="100" height="100">
+
+        <h1 class="logo-title">
+     Enchanted Forest Books
+          </h1>
+        
+      </a>
+
+      <ul class="nav-list">
+        <input type="checkbox" id="checkbox_toggle" />
+    <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+    <div class="menu"> <li class="nav-item">
+      <a href="../../index.html#home" class="nav-link home">Home</a>
+    </li>
+  <li class="nav-item">
+    <a href="../../index.html#about" class="nav-link about" >About</a>
+  </li>
+  <li class="nav-item">
+    <a href="#category" class="nav-link category">Category<i style="padding-left: 0.5rem;" class="fa-solid fa-caret-down"></i></a>
+    <ul class="sub-menu">
+      <li class="sub-menu-item"><a id="children-book" href="#">Children Book</a>
+          <ul class="sub-menu-2">
+              <li><a href="#picture-book">Picture Book</a></li>
+              <li><a href="#young-adult">Young Adult</a></li>
+            </ul>
+          </li>
+      <li class="sub-menu-item"><a id="fiction" href="#">Fiction</a>
+          <ul class="sub-menu-2">
+              <li><a href="../category-fiction/category-fiction.html#romance">Romance</a></li>
+              <li><a href="../category-fiction/category-fiction.html#horror">Horror</a></li>
+            </ul></li>
+      <li class="sub-menu-item"><a id="non-fiction"href="#">Non Fiction</a>
+          <ul class="sub-menu-2">
+              <li><a href="../category-nonfiction/category-nonfiction.html#history">History</a></li>
+              <li><a href="../category-nonfiction/category-nonfiction.html#self-help">Self Help</a></li>
+            </ul>
+          </li>
+   
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a href="../../contact.html" class="nav-link" 
+      >Contact</a
+    >
+  </li>
+  <li class="nav-item">
+      <a href="#" class="nav-link"><i class="fa-solid fa-magnifying-glass"></i></a>
+    </li>
+  <li class="nav-item">
+      <a href="#" class="nav-link" ><i class="fa-solid fa-cart-shopping"></i></a>
+    </li>
+  <li class="nav-item">
+      <a href="#" class="nav-link" ><i class="fa-solid fa-user"></i></a>
+    </li></div>
+         
+         
+  </ul>
+</nav> 
+
+   
+    <!-- Hero section -->
+    <div class="hero-section" id="home">
+      <img id="hero-img" src="../../assets/img/children-category-cover.jpeg" alt="hero-banner">
+     
+      <div class="hero-text">
+          <h1>Children Book</h1>
+      <p>Discover captivating tales that transport you to magical worlds. </p>
+          <p>Explore our curated collection of enchanting books that spark imagination and inspire adventure.</p> <p>Welcome to Enchanted Forest Books – your portal to extraordinary stories</p>
+        
+  </div>
+  </div>
+
+  
+    <!-- Category -->
+   <div class="category-section">
+    <div id="picture-book" class="category1">
+      <div class="category-tile"> <h1> Picture Book</h1></div>
+       
+        <div class="book-list1"> 
+        <div class="wrapper">
+        <div class="container">
+          <div style=" background-size: contain;
+          background: url(/assets/img/English_Harry_Potter_3_Epub_9781781100233.jpeg);
+          height: 70%;
+          width: 100%;
+          -webkit-background-size: 100%;
+          -moz-background-size: 100%;
+          -o-background-size: 100%;
+          background-size: 100%;" class="top""></div>
+          <div class="bottom">
+            <div class="left">
+              <div class="details">
+                <p class="title">Harry Potter and the Prisoner of Azakaban</p>
+              </div>
+              <div class="buy"><p class="price" style="color: orangered;"><span style="text-decoration: line-through;font-size:13px; color:black; padding-right:5px">$22</span>$20 </p><button class="btn"><i class="fa-solid fa-cart-shopping"></i></button></i></i></div>
+            </div>
+           
+          </div>
+        </div>
+        <div class="inside">
+          <div class="icon"><i class="fa-solid fa-circle-info"></i></div>
+          <div class="contents">
+            <ul><li>Name: Harry Potter and the Prisoner of Azkaban</li>
+                <li>Author: J.K Rowling</li></ul>
+                <i class="fa-solid fa-heart"></i>
+                
+             
+              
+           
+           
+          </div>
+        </div>
+      </div>
+      
+      <div class="wrapper">
+        <div class="container">
+          <div style=" background-size: contain;
+          background: url(/assets/img/English_Harry_Potter_3_Epub_9781781100233.jpeg);
+          height: 70%;
+          width: 100%;
+          -webkit-background-size: 100%;
+          -moz-background-size: 100%;
+          -o-background-size: 100%;
+          background-size: 100%;" class="top""></div>
+          <div class="bottom">
+            <div class="left">
+              <div class="details">
+                <p class="title">Harry Potter and the Prisoner of Azakaban</p>
+              </div>
+              <div class="buy"><p class="price" style="color: orangered;"><span style="text-decoration: line-through;font-size:13px; color:black; padding-right:5px">$22</span>$20 </p><button class="btn"><i class="fa-solid fa-cart-shopping"></i></button></i></i></div>
+            </div>
+           
+          </div>
+        </div>
+        <div class="inside">
+          <div class="icon"><i class="fa-solid fa-circle-info"></i></div>
+          <div class="contents">
+            <ul><li>Name: Harry Potter and the Prisoner of Azkaban</li>
+                <li>Author: J.K Rowling</li></ul>
+                <i class="fa-solid fa-heart"></i>
+                
+             
+              
+           
+           
+          </div>
+        </div>
+      </div>
+      <div class="wrapper">
+        <div class="container">
+          <div style=" background-size: contain;
+          background: url(/assets/img/English_Harry_Potter_3_Epub_9781781100233.jpeg);
+          height: 70%;
+          width: 100%;
+          -webkit-background-size: 100%;
+          -moz-background-size: 100%;
+          -o-background-size: 100%;
+          background-size: 100%;" class="top""></div>
+          <div class="bottom">
+            <div class="left">
+              <div class="details">
+                <p class="title">Harry Potter and the Prisoner of Azakaban</p>
+              </div>
+              <div class="buy"><p class="price" style="color: orangered;"><span style="text-decoration: line-through;font-size:13px; color:black; padding-right:5px">$22</span>$20 </p><button class="btn"><i class="fa-solid fa-cart-shopping"></i></button></i></i></div>
+            </div>
+           
+          </div>
+        </div>
+        <div class="inside">
+          <div class="icon"><i class="fa-solid fa-circle-info"></i></div>
+          <div class="contents">
+            <ul><li>Name: Harry Potter and the Prisoner of Azkaban</li>
+                <li>Author: J.K Rowling</li></ul>
+                <i class="fa-solid fa-heart"></i>
+                
+             
+              
+           
+           
+          </div>
+        </div>
+      </div>
+     
+    </div></div>
+  <div class="category-line-break line-break-left"></div>
+    <div id="young-adult" class="category2">
+      <div class="category-tile"> <h1><i class="fa-solid fa-book-open"></i> Young Adult</h1>
+      </div>       
+        <div class="book-list2"> 
+        <div class="wrapper">
+        <div class="container">
+          <div style=" background-size: contain;
+          background: url(/assets/img/English_Harry_Potter_3_Epub_9781781100233.jpeg);
+          height: 70%;
+          width: 100%;
+          -webkit-background-size: 100%;
+          -moz-background-size: 100%;
+          -o-background-size: 100%;
+          background-size: 100%;" class="top""></div>
+          <div class="bottom">
+            <div class="left">
+              <div class="details">
+                <p class="title">Harry Potter and the Prisoner of Azakaban</p>
+              </div>
+              <div class="buy"><p class="price" style="color: orangered;"><span style="text-decoration: line-through;font-size:13px; color:black; padding-right:5px">$22</span>$20 </p><button class="btn"><i class="fa-solid fa-cart-shopping"></i></button></i></i></div>
+            </div>
+           
+          </div>
+        </div>
+        <div class="inside">
+          <div class="icon"><i class="fa-solid fa-circle-info"></i></div>
+          <div class="contents">
+            <ul><li>Name: Harry Potter and the Prisoner of Azkaban</li>
+                <li>Author: J.K Rowling</li></ul>
+                <i class="fa-solid fa-heart"></i>
+                
+             
+              
+           
+           
+          </div>
+        </div>
+      </div>
+      
+      <div class="wrapper">
+        <div class="container">
+          <div style=" background-size: contain;
+          background: url(/assets/img/English_Harry_Potter_3_Epub_9781781100233.jpeg);
+          height: 70%;
+          width: 100%;
+          -webkit-background-size: 100%;
+          -moz-background-size: 100%;
+          -o-background-size: 100%;
+          background-size: 100%;" class="top""></div>
+          <div class="bottom">
+            <div class="left">
+              <div class="details">
+                <p class="title">Harry Potter and the Prisoner of Azakaban</p>
+              </div>
+              <div class="buy"><p class="price" style="color: orangered;"><span style="text-decoration: line-through;font-size:13px; color:black; padding-right:5px">$22</span>$20 </p><button class="btn"><i class="fa-solid fa-cart-shopping"></i></button></i></i></div>
+            </div>
+           
+          </div>
+        </div>
+        <div class="inside">
+          <div class="icon"><i class="fa-solid fa-circle-info"></i></div>
+          <div class="contents">
+            <ul><li>Name: Harry Potter and the Prisoner of Azkaban</li>
+                <li>Author: J.K Rowling</li></ul>
+                <i class="fa-solid fa-heart"></i>
+                
+             
+              
+           
+           
+          </div>
+        </div>
+      </div>
+    
+      <div class="wrapper">
+        <div class="container">
+          <div style=" background-size: contain;
+          background: url(/assets/img/English_Harry_Potter_3_Epub_9781781100233.jpeg);
+          height: 70%;
+          width: 100%;
+          -webkit-background-size: 100%;
+          -moz-background-size: 100%;
+          -o-background-size: 100%;
+          background-size: 100%;" class="top""></div>
+          <div class="bottom">
+            <div class="left">
+              <div class="details">
+                <p class="title">Harry Potter and the Prisoner of Azakaban</p>
+              </div>
+              <div class="buy"><p class="price" style="color: orangered;"><span style="text-decoration: line-through;font-size:13px; color:black; padding-right:5px">$22</span>$20 </p><button class="btn"><i class="fa-solid fa-cart-shopping"></i></button></i></i></div>
+            </div>
+           
+          </div>
+        </div>
+        <div class="inside">
+          <div class="icon"><i class="fa-solid fa-circle-info"></i></div>
+          <div class="contents">
+            <ul><li>Name: Harry Potter and the Prisoner of Azkaban</li>
+                <li>Author: J.K Rowling</li></ul>
+                <i class="fa-solid fa-heart"></i>
+                
+             
+              
+           
+           
+          </div>
+        </div>
+      </div>
+    </div></div>
+       
+        
+    </div>
+</div>
+
+    <!-- Jab TV Stakeholders -->
+
+    <!-- Footer -->
+    <footer>
+   
+      <div class="iframe-container">       
+           <iframe class="responsive-iframe"  src="https://www.youtube.com/embed/zXV4UuR-R30" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div> 
+              <div class="email-subscription"><p>Get the latest Echanted Forest promotions and new book arrivals!</p>
+                  <div class="email-subscription-input"><input placeholder="Leave your email here" type="text">
+                      <button class="btn">Subscribe</button>
+                  </div>
+                  
+                  <div><input type="checkbox">
+                  <label for="">By checking the box, you agree that you are at least 16 years of age.</label></div>
+                  <div class="footer-socialicon">
+                      <a href="#" class="youtube"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 576 512" font-size="large" height="2em" width="2em" xmlns="http://www.w3.org/2000/svg"><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"></path></svg></a>
+                      <a href="#" class="facebook"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" font-size="large" height="2em" width="2em" xmlns="http://www.w3.org/2000/svg"><path d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h137.25V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.27c-30.81 0-40.42 19.12-40.42 38.73V256h68.78l-11 71.69h-57.78V480H400a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48z"></path></svg></a>
+                      <a href="#" class="instagram"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" font-size="large" height="2em" width="2em" xmlns="http://www.w3.org/2000/svg"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg></a>
+                      <a href="#" class="twitter"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" font-size="large" height="2em" width="2em" xmlns="http://www.w3.org/2000/svg"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg></a>
+                    </div>
+      
+                    
+              </div>
+              <div class="flex-break"></div>
+              <ul class="nav-list">
+                  <li class="nav-item">
+                      <a href="../../index.html#home" class="nav-link" id="nav-link">Home</a>
+                    </li>
+                  <li class="nav-item">
+                    <a href="../../index.html#about" class="nav-link" id="nav-link">About us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#privact" class="nav-link" id="nav-link">Privacy Policy </a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="#terms" class="nav-link" id="nav-link">Terms</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#copyright" class="nav-link" id="nav-link">Copy rights</a>
+                    </li>
+                  <li class="nav-item">
+                    <a href="../../contact.html" class="nav-link" id="nav-link"
+                      >Contact</a
+                    >
+                  </li>
+          </ul>
+      
+               
+      
+          
+          </footer>
+
+ 
+
+
+    <script type="text/javascript"  src="/assets/js/style.js"></script>
+    <script src="https://kit.fontawesome.com/a63b903589.js" crossorigin="anonymous"></script>
   </body>
 </html>

@@ -24,8 +24,8 @@ Acknowledgement: Acknowledge the resources that you use here. -->
      <!-- Web page CSS -->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
      
-    <link rel="stylesheet" href="/assets/css/style.css" />
-    <link rel="stylesheet" href="/assets/css/reset.css" />
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+    <link rel="stylesheet" href="../../assets/css/reset.css" />
 
   <body>
 
@@ -33,7 +33,7 @@ Acknowledgement: Acknowledge the resources that you use here. -->
 
      <nav class="nav">
       <a href="../../index.html" class="logo">
-          <img class="logo-icon" src="/assets/img/logo.png" alt="Echanted Forest Icon" width="100" height="100">
+          <img class="logo-icon" src="../../assets/img/logo.png" alt="Echanted Forest Icon" width="100" height="100">
 
         <h1 class="logo-title">
      Enchanted Forest Books
@@ -42,58 +42,52 @@ Acknowledgement: Acknowledge the resources that you use here. -->
       </a>
 
       <ul class="nav-list">
-          <li class="nav-item">
-              <a href="#home" class="nav-link home">Home</a>
-            </li>
-          <li class="nav-item">
-            <a href="#about" class="nav-link about" >About</a>
-          </li>
-          <li class="nav-item">
-            <a href="#category" class="nav-link category">Category<i style="padding-left: 0.5rem;" class="fa-solid fa-caret-down"></i></a>
-            <ul class="sub-menu">
-              <li><a id="children-book" href="#">Children Book</a>
-                  <ul class="sub-menu">
-                      <li><a href="#">Picture Book</a></li>
-                      <li><a href="#">Young Adult</a></li>
-                    </ul>
-                  </li>
-              <li><a id="fiction" href="#">Fiction</a>
-                  <ul class="sub-menu">
-                      <li><a href="#">Romance</a></li>
-                      <li><a href="#">Horror</a></li>
-                    </ul></li>
-              <li><a id="non-fiction"href="#">Non Fiction</a>
-                  <ul class="sub-menu">
-                      <li><a href="#">History</a></li>
-                      <li><a href="#">Self Help</a></li>
-                    </ul>
-                  </li>
-              <li><a id="ref-book"href="#">Reference Book</a>
-                  <ul class="sub-menu">
-                      <li><a href="#">Picture Book</a></li>
-                      <li><a href="#">Young Adult</a></li>
-                    </ul></li>
-              <li><a id="textbook"href="#">Textbook</a>
-                  <ul class="sub-menu">
-                      <li><a href="#">Maths & Science</a></li>
-                      <li><a href="#">Social Science</a></li>
-                    </ul></li>
+        <input type="checkbox" id="checkbox_toggle" />
+    <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+    <div class="menu"> <li class="nav-item">
+      <a href="../../index.html#home" class="nav-link home">Home</a>
+    </li>
+  <li class="nav-item">
+    <a href="../../index.html#about" class="nav-link about" >About</a>
+  </li>
+  <li class="nav-item">
+    <a href="#category" class="nav-link category">Category<i style="padding-left: 0.5rem;" class="fa-solid fa-caret-down"></i></a>
+    <ul class="sub-menu">
+      <li class="sub-menu-item"><a id="children-book" href="#">Children Book</a>
+          <ul class="sub-menu-2">
+              <li><a href="../category-children/category-children.html#picture-book">Picture Book</a></li>
+              <li><a href="../category-children/category-children.html#young-adult">Young Adult</a></li>
             </ul>
           </li>
-          <li class="nav-item">
-            <a href="#contact" class="nav-link" 
-              >Contact</a
-            >
+      <li class="sub-menu-item"><a id="fiction" href="#">Fiction</a>
+          <ul class="sub-menu-2">
+              <li><a href="../category-fiction/category-fiction.html#romance">Romance</a></li>
+              <li><a href="../category-fiction/category-fiction.html#horror">Horror</a></li>
+            </ul></li>
+      <li class="sub-menu-item"><a id="non-fiction"href="#">Non Fiction</a>
+          <ul class="sub-menu-2">
+              <li><a href="#history">History</a></li>
+              <li><a href="#self-help">Self Help</a></li>
+            </ul>
           </li>
-          <li class="nav-item">
-              <a href="#" class="nav-link"><i class="fa-solid fa-magnifying-glass"></i></a>
-            </li>
-          <li class="nav-item">
-              <a href="#my-cart.html" class="nav-link" ><i class="fa-solid fa-cart-shopping"></i></a>
-            </li>
-          <li class="nav-item">
-              <a href="#signin.html" class="nav-link" ><i class="fa-solid fa-user"></i></a>
-            </li>
+   
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a href="../../contact.html" class="nav-link" 
+      >Contact</a
+    >
+  </li>
+  <li class="nav-item">
+      <a href="#" class="nav-link"><i class="fa-solid fa-magnifying-glass"></i></a>
+    </li>
+  <li class="nav-item">
+      <a href="#" class="nav-link" ><i class="fa-solid fa-cart-shopping"></i></a>
+    </li>
+  <li class="nav-item">
+      <a href="#" class="nav-link" ><i class="fa-solid fa-user"></i></a>
+    </li></div>
+         
          
   </ul>
 </nav>
@@ -101,7 +95,7 @@ Acknowledgement: Acknowledge the resources that you use here. -->
    
     <!-- Hero section -->
     <div class="hero-section" id="home">
-      <img id="hero-img" src="/assets/img/non-fiction-category-cover.webp" alt="hero-banner">
+      <img id="hero-img" src="../../assets/img/non-fiction-category-cover.webp" alt="hero-banner">
      
       <div class="hero-text">
           <h1>Non Fiction</h1>
@@ -114,7 +108,7 @@ Acknowledgement: Acknowledge the resources that you use here. -->
   
     <!-- Category -->
    <div class="category-section">
-    <div class="category1">
+    <div id="history" class="category1">
       <div class="category-tile"> <h1> History</h1></div>
        
         <div class="book-list1"> 
@@ -224,14 +218,14 @@ Acknowledgement: Acknowledge the resources that you use here. -->
      
     </div></div>
   <div class="category-line-break line-break-left"></div>
-    <div class="category2">
+    <div id="self-help" class="category2">
       <div class="category-tile"> <h1><i class="fa-solid fa-book-open"></i> Self-help</h1>
       </div>       
         <div class="book-list2"> 
         <div class="wrapper">
         <div class="container">
           <div style=" background-size: contain;
-          background: url(/assets/img/English_Harry_Potter_3_Epub_9781781100233.jpeg);
+          background: url(../../assets/img/English_Harry_Potter_3_Epub_9781781100233.jpeg);
           height: 70%;
           width: 100%;
           -webkit-background-size: 100%;
@@ -266,7 +260,7 @@ Acknowledgement: Acknowledge the resources that you use here. -->
       <div class="wrapper">
         <div class="container">
           <div style=" background-size: contain;
-          background: url(/assets/img/English_Harry_Potter_3_Epub_9781781100233.jpeg);
+          background: url(../../assets/img/English_Harry_Potter_3_Epub_9781781100233.jpeg);
           height: 70%;
           width: 100%;
           -webkit-background-size: 100%;
@@ -301,7 +295,7 @@ Acknowledgement: Acknowledge the resources that you use here. -->
       <div class="wrapper">
         <div class="container">
           <div style=" background-size: contain;
-          background: url(/assets/img/English_Harry_Potter_3_Epub_9781781100233.jpeg);
+          background: url(../../assets/img/English_Harry_Potter_3_Epub_9781781100233.jpeg);
           height: 70%;
           width: 100%;
           -webkit-background-size: 100%;
@@ -365,13 +359,13 @@ Acknowledgement: Acknowledge the resources that you use here. -->
               <div class="flex-break"></div>
               <ul class="nav-list">
                   <li class="nav-item">
-                      <a href="#home" class="nav-link" id="nav-link">Home</a>
+                      <a href="../../index.html#home" class="nav-link" id="nav-link">Home</a>
                     </li>
                   <li class="nav-item">
-                    <a href="#about" class="nav-link" id="nav-link">About us</a>
+                    <a href="../../index.html#about" class="nav-link" id="nav-link">About us</a>
                   </li>
                   <li class="nav-item">
-                    <a href="#privact" class="nav-link" id="nav-link">Privacy Policy </a>
+                    <a href="#privacy" class="nav-link" id="nav-link">Privacy Policy </a>
                   </li>
                   <li class="nav-item">
                       <a href="#terms" class="nav-link" id="nav-link">Terms</a>
@@ -380,7 +374,7 @@ Acknowledgement: Acknowledge the resources that you use here. -->
                       <a href="#copyright" class="nav-link" id="nav-link">Copy rights</a>
                     </li>
                   <li class="nav-item">
-                    <a href="#contact" class="nav-link" id="nav-link"
+                    <a href="../../contact.html" class="nav-link" id="nav-link"
                       >Contact</a
                     >
                   </li>
