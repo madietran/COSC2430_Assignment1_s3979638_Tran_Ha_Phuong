@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <!-- Add your CSS link for styling here -->
+    <style>
+      @media (max-width: 768px) {
+        label,
+        input,
+        select,
+        textarea {
+          display: block;
+          margin-bottom: 10px;
+        }
+
+        label {
+          font-weight: bold;
+        }
+
+        input[type="checkbox"],
+        input[type="radio"] {
+          display: inline;
+          margin-right: 5px;
+        }
+
+        button {
+          display: block;
+          width: 100%;
+        }
+      }
+
+      /* Desktop styles */
+      @media (min-width: 769px) {
+        label,
+        input,
+        select,
+        textarea {
+          display: inline-block;
+          vertical-align: middle;
+          margin-right: 20px;
+        }
+
+        label {
+          width: 150px;
+        }
+
+        input[type="checkbox"],
+        input[type="radio"] {
+          display: inline;
+          margin-right: 5px;
+        }
+
+        button {
+          display: inline-block;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header (same as home page) -->
+    <header>
+      <!-- Header content here -->
+    </header>
+
+    <!-- Main content -->
+    <main>
+      <h1>Contact Us</h1>
+      <form action="process_contact_form.php" method="post">
+        <div class="form-item">
+          <label for="contactPurpose">Contact Purpose:</label>
+          <select id="contactPurpose" name="contactPurpose">
+            <option value="sell">I want to sell books</option>
+            <option value="buy">I want to buy books</option>
+          </select>
+        </div>
+
+        <div class="form-item">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+
+        <div class="form-item">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+
+        <div class="form-item">
+          <label for="phone">Phone:</label>
+          <input type="tel" id="phone" name="phone" required />
+        </div>
+
+        <div class="form-item">
+          <label>Contact Preference:</label>
+          <input
+            type="checkbox"
+            id="emailPreference"
+            name="contactPreference[]"
+            value="email"
+          />
+
+          <label for="emailPreference">By email</label>
+          <input
+            type="checkbox"
+            id="phonePreference"
+            name="contactPreference[]"
+            value="phone"
+          />
+          <label for="phonePreference">By phone</label>
+        </div>
+
+        <div class="form-item">
+          <label>Receive Weekly Newsletter:</label>
+          <input
+            type="radio"
+            id="yesNewsletter"
+            name="newsletter"
+            value="yes"
+            checked
+          />
+
+          <label for="yesNewsletter">Yes</label>
+          <input type="radio" id="noNewsletter" name="newsletter" value="no" />
+          <label for="noNewsletter">No</label>
+        </div>
+
+        <div class="form-item">
+          <label for="extraNotes">Extra Notes:</label>
+          <textarea id="extraNotes" name="extraNotes" rows="4"></textarea>
+        </div>
+
+        <div>
+          <button type="submit">Submit</button>
+          <button type="reset">Reset</button>
+        </div>
+      </form>
+    </main>
+
+    <!-- Footer (same as home page) -->
+    <footer>
+      <!-- Footer content here -->
+    </footer>
+  </body>
+</html>
