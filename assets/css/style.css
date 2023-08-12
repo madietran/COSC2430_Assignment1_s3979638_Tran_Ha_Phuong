@@ -903,6 +903,17 @@ i.fa-solid.fa-heart:hover {
 }
 
 /* Contact Page */
+.form-section {
+  background-color: var(--background-color);
+  padding: var(--section-padding);
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+form {
+  padding:0 3rem;
+  width: 100%;
+}
 .contact-hero {
   text-align: left;
 }
@@ -926,18 +937,23 @@ form select {
   border-bottom: 1px solid var(--primary-color);
 }
 
-@media (max-width: 768px) {
+@media (min-width:768px) and (max-width: 992px) {
+
   form label,
   form input,
   form select,
   form textarea {
-    display: block;
+    display: inline-block;
     margin-bottom: 10px;
     background-color: transparent;
   }
 
   form label {
     font-weight: bold;
+    width: 20%;
+  }
+  form input, form select, form textarea {
+    width: 80%;
   }
 
   form input[type="checkbox"],
@@ -947,13 +963,63 @@ form select {
   }
 
   form button {
-    display: block;
+    display: inline-block;
+    width: 45%;
+    margin-top: 1rem;
+  }
+  .form-button-container {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width:768px)  {
+
+  form label,
+  form input,
+  form select,
+  form textarea {
+    display:block;
+    margin-bottom: 10px;
+    background-color: transparent;
+  }
+
+  form label {
+    font-weight: bold;
     width: 100%;
+  }
+  .radio-label {
+    width: 30%;
+  }
+  form input[type="text"],form input[type="tel"],form input[type="email"], form select, form textarea {
+    width: 100%;
+  }
+  .form-item-radio-container,   .form-item-checkbox-container {
+    display: inline-block;
+    
+
+  }
+
+  form input[type="checkbox"],
+  form input[type="radio"] {
+    display: inline-block;
+    margin-right: 5px;
+    width: 40%;
+  }
+
+  form button {
+    display: inline-block;
+    width: 45%;
+    margin-top: 1rem;
+  }
+  .form-button-container {
+    display: flex;
+    justify-content: space-between;
   }
 }
 
 /* Desktop styles */
-@media (min-width: 769px) {
+@media (min-width: 992px) {
   form label,
   form input,
   form select,
@@ -963,7 +1029,7 @@ form select {
     margin-right: 30px;
     background-color: transparent;
   }
-  .form-item-radio-container {
+  .form-item-radio-container,.form-item-checkbox-container {
     display: inline-block;
   }
   form label {
@@ -974,7 +1040,7 @@ form select {
   input[type="tel"],
   form select,
   form textarea {
-    width: 500px;
+    width: 70%;
   }
   form input[type="checkbox"],
   form input[type="radio"] {
@@ -992,4 +1058,33 @@ form select {
     justify-content: space-between;
   }
 }
-/* Contact Responsive */
+
+/* Map */
+.map-section{
+  
+  background-color: var(--secondary-background-color);
+  padding: var(--section-padding);
+  color:var(--primary-color);
+  font-size: var(--primary-font-size);
+}
+.map-section-body {
+  display: flex;
+  padding:0 4rem;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.map-section .responsive-iframe{
+  width: 100%;
+}
+
+.map-description {
+  padding: 0 3rem;
+  display: flex
+  ;
+}
+.map-description i {
+  font-size: 3rem;
+}
+
+

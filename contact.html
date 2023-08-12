@@ -111,82 +111,98 @@ Acknowledgement: Acknowledge the resources that you use here. -->
     
         <div class="hero-text contact-page">
           <h1>Contact Us</h1>
-          <form action="process_contact_form.php" method="post">
-            <div class="form-item">
-              <label for="contactPurpose">Contact Purpose:</label>
-              <select id="contactPurpose" name="contactPurpose">
-                <option value="sell">I want to sell books</option>
-                <option value="buy">I want to buy books</option>
-              </select>
-            </div>
-    
-            <div class="form-item">
-              <label for="name">Name:</label>
-              <input type="text" id="name" name="name" required />
-            </div>
-    
-            <div class="form-item">
-              <label for="email">Email:</label>
-              <input type="email" id="email" name="email" required />
-            </div>
-    
-            <div class="form-item">
-              <label for="phone">Phone:</label>
-              <input type="tel" id="phone" name="phone" required />
-            </div>
-    
-            <div class="form-item">
-              <label>Contact Preference:</label>
-              <input
-                type="checkbox"
-                id="emailPreference"
-                name="contactPreference[]"
-                value="email"
-              />
-    
-              <label for="emailPreference">By email</label>
-              <input
-                type="checkbox"
-                id="phonePreference"
-                name="contactPreference[]"
-                value="phone"
-              />
-              <label for="phonePreference">By phone</label>
-            </div>
-    
-            <div class="form-item">
-              <label>Receive Weekly Newsletter:</label>
-              <div class="form-item-radio-container"> <input
-                type="radio"
-                id="yesNewsletter"
-                name="newsletter"
-                value="yes"
-                checked
-              />
-    
-              <label for="yesNewsletter">Yes</label></div>
-             
-              <div class="form-item-radio-container"> <input type="radio" id="noNewsletter" name="newsletter" value="no" />
-                <label for="noNewsletter">No</label></div>
-             
-            </div>
-    
-            <div class="form-item">
-              <label for="extraNotes">Extra Notes:</label>
-              <textarea id="extraNotes" name="extraNotes" rows="2"></textarea>
-            </div>
-    
-            <div class="form-button-container">
-              <button class="btn" type="submit">Submit</button>
-              <button  class="btn" type="reset">Reset</button>
-            </div>
-          </form>
+          
       
     </div>
     </div>
 
- 
+ <div class="form-section">
+  <form action="process_contact_form.php" method="post">
+    <div class="form-item">
+      <label for="contactPurpose">Contact Purpose:</label>
+      <select id="contactPurpose" name="contactPurpose">
+        <option value="sell">I want to sell books</option>
+        <option value="buy">I want to buy books</option>
+      </select>
+    </div>
 
+    <div class="form-item">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required />
+    </div>
+
+    <div class="form-item">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+    </div>
+
+    <div class="form-item">
+      <label for="phone">Phone:</label>
+      <input type="tel" id="phone" name="phone" required />
+    </div>
+
+    <div class="form-item">
+      <label>Contact Preference:</label>
+      <div class="form-item-checkbox-container"><input
+        type="checkbox"
+        id="emailPreference"
+        name="contactPreference[]"
+        value="email"
+      />
+
+      <label class="radio-label" for="emailPreference">By email</label></div>
+      <div class="form-item-checkbox-container">
+      <input
+        type="checkbox"
+        id="phonePreference"
+        name="contactPreference[]"
+        value="phone"
+      />
+      <label class="radio-label" for="phonePreference">By phone</label></div>
+      
+    </div>
+
+    <div class="form-item">
+      <label>Receive Weekly Newsletter:</label>
+      <div class="form-item-radio-container"> <input
+        type="radio"
+        id="yesNewsletter"
+        name="newsletter"
+        value="yes"
+        checked
+      />
+
+      <label class="radio-label" for="yesNewsletter">Yes</label></div>
+     
+      <div class="form-item-radio-container"> <input type="radio" id="noNewsletter" name="newsletter" value="no" />
+        <label class="radio-label" for="noNewsletter">No</label></div>
+     
+    </div>
+
+    <div class="form-item">
+      <label for="extraNotes">Extra Notes:</label>
+      <textarea id="extraNotes" name="extraNotes" rows="2"></textarea>
+    </div>
+
+    <div class="form-button-container">
+      <button class="btn" type="submit">Submit</button>
+      <button  class="btn" type="reset">Reset</button>
+    </div>
+  </form>
+ </div>
+
+ <div class="map-section">
+  <div class='map-section-body'><div class="iframe-container">       
+    <iframe  class="responsive-iframe" style="margin-bottom:1rem" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24176.42582600734!2d-74.0153538256836!3d40.76085400000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c258f962ea7275%3A0x6c4335a0edf52f21!2s53rd%20Street%20Library!5e0!3m2!1sen!2s!4v1691811456537!5m2!1sen!2s" width="600" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div> 
+  <div class="map-description">
+    <i style="padding-right: 1rem;" class="fa-solid fa-location-dot"></i>
+    <div class="map-text">          
+    <p>Send an email for find us at: </p>
+    <p>53rd Street Library, New York, United States </p></div>
+  </div></div>
+  
+
+</div>
     <!-- Footer -->
     <footer>
    
